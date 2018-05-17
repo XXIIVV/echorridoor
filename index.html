@@ -6,21 +6,27 @@
     <meta name='keywords' content='aliceffekt, traumae, devine lu linvega' />
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' /><meta name='apple-mobile-web-app-capable' content='yes' />
     <link rel='stylesheet' type='text/css' href='links/reset.css' />
-    <link rel='stylesheet' type='text/css' href='links/font.din.css' />
-    <link rel='stylesheet' type='text/css' href='links/style.main.css' />
+    <link rel='stylesheet' type='text/css' href='links/main.css' />
     <title>Echorridoors</title>
   </head>
   <body>
-    <wallpaper></wallpaper>
+    <wallpaper id='bg'></wallpaper>
     <menu>
-      <a href='http://wiki.xxiivv.com/'><img class='logo' src='media/vectors/logo.svg'></a>
+      <a href='http://wiki.xxiivv.com/'>
+        <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" height='33.0' width='160.0' id='logo'>
+          <path d='M 3.0 31.0 l 0 -22  a 7.5,7.5 0 1,1 15.0,0 l 0 15.0  a 7.5,7.5 0 0,0 15.0,0 l 0 -15.0 a 7.5,7.5 0 1,1 15.0,0 l 0 22.5  l 15.0 0  l 0 -30.0 l 15.0 0  l 0 30.0  l 15.0 0  l 0 -30.0 l 0.6 0  l 15.0 28.5  l 15.0 -27.0 l 15 28.5' stroke='white' stroke-width='1.5' fill='none' stroke-linecap='round'/>
+      </svg>
+    </a>
     </menu>
     <footer>
-      <a href='http://wiki.xxiivv.com/Nataniev'><img src='media/vectors/nataniev.svg'></a>
       <a href='http://100r.co/'><img src='media/vectors/hundredrabbits.svg'></a>
+      <a href='http://webring.xxiivv.com/'><img src='media/vectors/webring.svg'></a>
     </footer>
     <audio loop autoplay>
       <source src='media/audio/ambience.mp3' type='audio/mpeg'>
     </audio>
+    <script>
+      setTimeout(()=>{ document.getElementById("bg").style.opacity = 0.5 },500)
+    </script>
   </body>
 </html>
