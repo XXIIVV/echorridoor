@@ -12,21 +12,29 @@
   <body>
     <wallpaper id='bg'></wallpaper>
     <menu>
-      <a href='http://wiki.xxiivv.com/'>
-        <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" height='33.0' width='160.0' id='logo'>
+      <a href='https://wiki.xxiivv.com/' id='logo'>
+        <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" height='33.0' width='160.0'>
           <path d='M 3.0 31.0 l 0 -22  a 7.5,7.5 0 1,1 15.0,0 l 0 15.0  a 7.5,7.5 0 0,0 15.0,0 l 0 -15.0 a 7.5,7.5 0 1,1 15.0,0 l 0 22.5  l 15.0 0  l 0 -30.0 l 15.0 0  l 0 30.0  l 15.0 0  l 0 -30.0 l 0.6 0  l 15.0 28.5  l 15.0 -27.0 l 15 28.5' stroke='white' stroke-width='1.5' fill='none' stroke-linecap='round'/>
-      </svg>
-    </a>
+        </svg>
+      </a>
     </menu>
-    <footer>
-      <a href='http://100r.co/'><img src='media/vectors/hundredrabbits.svg'></a>
-      <a href='http://webring.xxiivv.com/#random'><img src='media/vectors/webring.svg'></a>
+    <footer id='footer'>
+      <a target='_blank' href='http://100r.co/'><img src='media/vectors/hundredrabbits.svg'></a>
+      <a target='_blank' href='http://webring.xxiivv.com/#random'><img src='media/vectors/webring.svg'></a>
     </footer>
     <audio loop autoplay>
       <source src='media/audio/ambience.mp3' type='audio/mpeg'>
     </audio>
     <script>
-      setTimeout(()=>{ document.getElementById("bg").style.opacity = 0.5 },500)
+      setTimeout(()=>{ 
+        document.getElementById("bg").style.opacity = 0.5 
+      },500)
+      setTimeout(()=>{ 
+        document.getElementById("logo").style.opacity = 1.0; 
+      },1000)
+      setTimeout(()=>{ 
+        document.getElementById("footer").style.opacity = 1.0; 
+      },5000)
     </script>
   </body>
 </html>
